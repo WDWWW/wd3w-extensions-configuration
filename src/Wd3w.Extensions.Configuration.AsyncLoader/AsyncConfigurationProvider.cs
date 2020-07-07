@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
@@ -34,6 +35,9 @@ namespace Wd3w.Extensions.Configuration.AsyncLoader
             try
             {
                 var data = await _source.LoadAsync().ConfigureAwait(false);
+                if (!string.IsNullOrEmpty(_source.Prefix))
+                    data = data.ToDictionary(pair => $"{_source.Prefix}{ConfigurationPath.KeyDelimiter}{pair.Key}", pair => pair.Value);
+                
                 if (data != null && !EquivalentTo(Data, data))
                 {
                     Data = data;

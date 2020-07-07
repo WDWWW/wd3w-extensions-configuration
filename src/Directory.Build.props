@@ -1,0 +1,16 @@
+<Project>
+    <PropertyGroup>
+        <AspNetCoreVersion>3.1.5</AspNetCoreVersion>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>8.0</LangVersion>
+        <PackageIdBase>Wd3w.Extensions.Configuration</PackageIdBase>
+        <PackageIconUrl>https://raw.githubusercontent.com/WDWWW/aspnetcore-easy-testing/master/asset/wd3w.png</PackageIconUrl>
+        <Authors>Jinseoung Lee</Authors>
+        <PackageTags>aspnetcore;aspnetcore-configuration;configuration-loader</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageProjectUrl>https://github.com/WDWWW/wd3w-extensions-configuration</PackageProjectUrl>
+    </PropertyGroup>
+</Project>

@@ -56,8 +56,8 @@ namespace Wd3w.Extensions.Configuration.AsyncLoader
 
             }
         }
-        
-        public static bool EquivalentTo(IDictionary<string, string> first, IDictionary<string, string> second)
+
+        private static bool EquivalentTo(IDictionary<string, string> first, IDictionary<string, string> second)
         {
             if (first == second) return true;
             if (first == null || second == null) return false;

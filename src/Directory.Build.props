@@ -16,6 +16,7 @@
         <PackageTags>aspnetcore;aspnetcore-configuration;configuration-loader</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageProjectUrl>https://github.com/WDWWW/wd3w-extensions-configuration</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
     
     <PropertyGroup>

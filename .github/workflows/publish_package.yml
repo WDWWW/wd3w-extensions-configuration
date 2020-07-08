@@ -5,6 +5,7 @@ on:
     branches: [ master ]
     paths:
       - build/version.props
+      - .github/workflows/publish_package.yml
 
 jobs:
   publish:
@@ -18,6 +19,9 @@ jobs:
     - name: Install dependencies
       working-directory: src
       run: dotnet restore
+    - name: Build
+      working-directory: src
+      run: dotnet build --no-restore
     - name: Pack
       working-directory: src
       run: dotnet pack

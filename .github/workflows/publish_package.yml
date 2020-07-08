@@ -27,5 +27,5 @@ jobs:
       run: dotnet pack
     - name: Publish
       working-directory: src
-      run: dotnet nuget push *\bin\**\*.snupkg -k ${{ secrets.WD3W_NUGET_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
+      run: dotnet nuget push *\bin\**\*.nupkg -k ${{ secrets.WD3W_NUGET_KEY }} -s https://api.nuget.org/v3/index.json --skip-duplicate
   

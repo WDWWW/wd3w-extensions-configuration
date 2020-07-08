@@ -1,5 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+    <PropertyGroup>
+        <PackageId>$(PackageIdBase).S3</PackageId>
+    </PropertyGroup>
+    
     <ItemGroup>
       <PackageReference Include="AWSSDK.S3" Version="$(AwsS3Version)" />
       <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="$(AspNetCoreVersion)" />

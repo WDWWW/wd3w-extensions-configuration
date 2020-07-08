@@ -7,7 +7,6 @@ ProjectSection(SolutionItems) = preProject
 	..\README.md = ..\README.md
 	..\.gitignore = ..\.gitignore
 	..\LICENSE = ..\LICENSE
-	Directory.Build.props = Directory.Build.props
 EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wd3w.Extensions.Configuration.Test", "Wd3w.Extensions.Configuration.Test\Wd3w.Extensions.Configuration.Test.csproj", "{34B9F354-F124-4B9C-BF74-6ED79CA19BCA}"
@@ -15,6 +14,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wd3w.Extensions.Configuration.S3", "Wd3w.Extensions.Configuration.S3\Wd3w.Extensions.Configuration.S3.csproj", "{3D90236A-B2FB-42C5-9F29-7311732CDF2C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wd3w.Extensions.Configuration.AwsParameterStore", "Wd3w.Extensions.Configuration.AwsParameterStore\Wd3w.Extensions.Configuration.AwsParameterStore.csproj", "{52D841B7-668D-4B11-B8A0-4DFD93EC7B85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Props", "Props", "{D22BAC6C-AA93-4D16-B1CA-CCD04863E354}"
+ProjectSection(SolutionItems) = preProject
+	Directory.Build.props = Directory.Build.props
+	..\build\version.props = ..\build\version.props
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

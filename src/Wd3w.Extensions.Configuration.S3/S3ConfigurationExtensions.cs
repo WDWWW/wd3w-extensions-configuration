@@ -51,7 +51,7 @@ namespace Wd3w.Extensions.Configuration.S3
             builder.AddLoadAsync(async () =>
             {
                 using var client = clientCreator();
-                var response = await client.GetObjectAsync(objectRequest);
+                var response = await client.GetObjectAsync(objectRequest).ConfigureAwait(false);
                 return JsonConfigurationParser.Parse(response.ResponseStream);
             }, optional, period, prefix, onException);
             return builder;

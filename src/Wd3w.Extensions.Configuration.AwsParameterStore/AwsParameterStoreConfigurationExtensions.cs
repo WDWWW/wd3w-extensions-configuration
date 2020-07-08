@@ -35,7 +35,7 @@ namespace Wd3w.Extensions.Configuration.AwsParameterStore
                 {
                     Name = name,
                     WithDecryption = withDecryption
-                });
+                }).ConfigureAwait(false);
 
                 return JsonConfigurationParser.Parse(response.Parameter.Value);
             }, optional, period, prefix, onException);

@@ -53,7 +53,7 @@ namespace Wd3w.Extensions.Configuration.AsyncLoader
                     Reload = reload
                 };
                 if (_source.OnLoadExceptionAsync != default)
-                    await _source.OnLoadExceptionAsync(context);
+                    await _source.OnLoadExceptionAsync(context).ConfigureAwait(false);
 
                 if (!context.Ignore)
                     throw;

@@ -7,7 +7,7 @@ namespace Wd3w.Extensions.Configuration.Test
     public class AwsJsonParameterProviderTest
     {
         [Fact]
-        public void LoadFromParamterStore()
+        public void LoadFromParameterStore()
         {
             var configuration = new ConfigurationBuilder()
                 .AddAwsJsonParameter("wd3w-configuration-library-key")

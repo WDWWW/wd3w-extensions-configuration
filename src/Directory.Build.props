@@ -2,7 +2,7 @@
     <Import Project="../build/version.props" />
     
     <PropertyGroup>
-        <AspNetCoreVersion>3.1.5</AspNetCoreVersion>
+        <AspNetCoreVersion>3.1.0</AspNetCoreVersion>
         <AwsS3Version>3.3.111.21</AwsS3Version>
         <AwsSSMVersion>3.3.126.8</AwsSSMVersion>
     </PropertyGroup>
